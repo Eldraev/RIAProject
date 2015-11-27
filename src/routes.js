@@ -4,9 +4,11 @@ var React = require('react'),
     IndexRoute = ReactRouter.IndexRoute,
     Wrap = require('./components/wrap');
 	Categories = require('./components/categories');
+	Options = require('./components/options');
 
 module.exports = (
     <Route path='/' component={Wrap}>
         <Route path='/categories' component={Categories}/>
+		<Route path='/options' component={Options}/>
     </Route>
 );

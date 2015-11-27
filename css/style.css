@@ -1,20 +1,48 @@
-ul{
-    float:left;
-    display:inline-block;
-	list-style-type:none;
-	display:block;
-    padding:10px 40px;
-    text-decoration:none;
+ul, li{
+	list-style-type: none;
+	margin:0;
+	padding:0 0 0 15px;    
 }
 
-div.catmenu {
-	background-color: #111111;
+div {
+	text-align: center;
+}
+
+div.catmenu{
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+div.optionsmenu{
+    float: right;
+    margin: 0 20px 0 0;
+}
+
+.optionsmenu li.mainoption {
+	color: #dddddd;
+	background-color: #333333;
+	border-bottom: 1px solid black;
+}
+
+.optionsmenu li.suboption {
+	color: #222222;
+}
+
+div.optionsmenu li{
+	background-color: #555555;
+	width: 200px;
+}
+
+body{ 
+	background-color: #ffffff;
 }
 
 button {
    border-top: 1px solid #96d1f8;
    background: #65a9d7;
 
+   width: 200px;
+   
    padding: 5px 10px;
    border-radius: 8px;
    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
