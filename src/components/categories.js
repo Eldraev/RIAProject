@@ -9,10 +9,10 @@ var Categories = React.createClass({
             <div className="catmenu">
                 <h2>Categories</h2>
                 <ul>
-					<li><button >Category 1</button></li>
-					<li><button >Category 2</button></li>
-					<li><button >Category 3</button></li>
-					<li><button >Category 4</button></li>
+					<li><button ><b>Body</b></button></li>
+					<li><button ><b>Face</b></button></li>
+					<li><button ><b>Hair</b></button></li>
+					<li><button ><b>Stats</b></button></li>
 				</ul>
             </div>
         );

@@ -4,8 +4,28 @@ ul, li{
 	padding:0 0 0 15px;    
 }
 
+input[type=range]{
+    width: 150px;
+}
+
 div {
 	text-align: center;
+}
+
+div.wrap {
+	margin:0 auto;
+	padding: 20px;
+	text-align: left;
+}
+
+img.portrait {
+	width: 400px;
+	height: 400px;
+}
+
+div.portraitview {
+	float: left;
+    margin: 0 20px 0 0;
 }
 
 div.catmenu{
@@ -13,45 +33,68 @@ div.catmenu{
     margin: 0 20px 0 0;
 }
 
+div.catmenu ul{
+	padding: 10px 15px 10px 0px;
+	position: relative;
+	background-color: #555555;
+	width: 200px;
+	border-radius: 20px;
+}
+
 div.optionsmenu{
-    float: right;
+    float: left;
     margin: 0 20px 0 0;
 }
 
 .optionsmenu li.mainoption {
+	border-radius: 5px;
 	color: #dddddd;
 	background-color: #333333;
-	border-bottom: 1px solid black;
+	border-bottom: 0px solid black;
 }
 
 .optionsmenu li.suboption {
+	border-radius: 0px;
 	color: #222222;
 }
 
-div.optionsmenu li{
+div.optionsmenu ul{
+	padding: 10px 10px 10px 10px;
+	position: relative;
 	background-color: #555555;
-	width: 200px;
+	width: 300px;
+	border-radius: 20px;
 }
 
 body{ 
 	background-color: #ffffff;
+	font-family: 'Orbitron', sans-serif;
+}
+
+button.racebtn{
+	background: #65a9d7;
+
+	width: 90px;
+	height: 90px;
+   
+	padding: 10px 10px 10px 10px;
+	border-radius: 8px;
+	color: white;
+	font-size: 14px;
 }
 
 button {
-   border-top: 1px solid #96d1f8;
-   background: #65a9d7;
+	background: #65a9d7;
 
-   width: 200px;
+	width: 180px;
+	height: 94px;
    
-   padding: 5px 10px;
-   border-radius: 8px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 14px;
-   text-decoration: none;
-   vertical-align: middle;
+	padding: 10px 10px 10px 10px;
+	border-radius: 8px;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Orbitron', sans-serif;
    }
    
 button:hover {
