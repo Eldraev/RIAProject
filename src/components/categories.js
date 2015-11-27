@@ -6,7 +6,7 @@ var React = require('react'),
 var Categories = React.createClass({
     render: function(){
         return (
-            <div class="catmenu">
+            <div className="catmenu">
                 <h2>Categories</h2>
                 <ul>
 					<li><button >Category 1</button></li>
