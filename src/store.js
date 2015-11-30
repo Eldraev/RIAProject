@@ -1,9 +1,9 @@
 var Redux = require('redux'),
-    catReducer = require('./reducers/cat'),
+    optReducer = require('./reducers/opt1'),
     initialState = require('./initial-state');
 
 var reducers = Redux.combineReducers({
-    currentCat: catReducer
+    gender: optReducer
 });
 
 var store = Redux.createStore(reducers, initialState());

@@ -1,7 +1,7 @@
 module.exports = function(){
     return {
-        currentCat: {
-            currentCategory: 0
+        gender: {
+            gender: 0
         }
     }
 };

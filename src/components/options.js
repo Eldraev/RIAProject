@@ -10,7 +10,7 @@ var Options = React.createClass({
                 <h2>Options</h2>
                 <ul>
 					<li className="mainoption">Gender: </li> 
-					<li className="suboption"><input type="radio" name="sex" value="male"/>Male <input type="radio" name="sex" value="female"/>Female </li>
+					<li className="suboption"><input type="radio" name="sex" value="male" onClick={this.props.setMale}/>Male <input type="radio" name="sex" value="female" onClick={this.props.setFemale}/>Female </li>
 					<li className="mainoption">Complexion: </li>
 					<li className="suboption">light<input type="range" name="complexion" min="0" max="10"/>dark</li>
 					<li className="mainoption">Race: </li>
@@ -23,4 +23,19 @@ var Options = React.createClass({
     }
 });
 
-module.exports = Options;
+var mapStateToProps = function(state){
+    return state.gender;
+};
+
+var mapDispatchToProps = function(dispatch){
+    return {
+        setMale: function(){
+            dispatch(actions.setGender(0));
+        },
+		setFemale: function(){
+            dispatch(actions.setGender(1));
+        }
+    }
+};
+
+module.exports = ReactRedux.connect(mapStateToProps, mapDispatchToProps)(Options);
