@@ -10,7 +10,10 @@ var Wrap = React.createClass({
                 <h1>Character Creator</h1>
 					<Categories/>
 					<Portrait/>
-					<Options4/>
+					{true && <Options/>}
+					{false && <Options2/>}
+					{false && <Options3/>}
+					{false && <Options4/>}
 			</div>
         );
     }
