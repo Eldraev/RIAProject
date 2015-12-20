@@ -1,6 +1,6 @@
 var React = require('react'),
     Cat = require('./categories');
-	Opt = require('./options');
+	Opt = require('./options2');
 	Pot = require('./portrait');
 
 var Wrap = React.createClass({
@@ -10,7 +10,7 @@ var Wrap = React.createClass({
                 <h1>Character Creator</h1>
 					<Categories/>
 					<Portrait/>
-					<Options/>
+					<Options4/>
 			</div>
         );
     }
